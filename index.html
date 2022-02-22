@@ -1,0 +1,540 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>游戏推荐</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css样式 -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<!--// css样式 -->
+<!-- icon字体 -->
+<link href="css/font-awesome.css" rel="stylesheet">
+<!-- //icon字体 -->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<script src="js/bootstrap.js"></script>
+<script src="js/SmoothScroll.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+    
+
+    
+    
+    $(function(){
+        /*文字改变*/
+	$(".header .container nav div ul li").click(function(){  
+		$(".w3layouts-text .item").hide();
+		$(".w3layouts-text .item").eq($(".header .container nav div ul li").index(this)).show();
+        
+	})
+        /*切换背景*/
+    $("#one").click(function(){  
+        $("#bg").removeClass();
+        $("#bg").addClass('banner');
+    })
+        
+    $("#two").click(function(){  
+        $("#bg").removeClass();
+        $("#bg").addClass('banner2');
+    })
+    
+    $("#three").click(function(){  
+        $("#bg").removeClass();
+        $("#bg").addClass('banner3');
+    })
+	$("#four").click(function(){  
+        $("#bg").removeClass();
+        $("#bg").addClass('banner4');
+    })
+    $("#five").click(function(){  
+        $("#bg").removeClass();
+        $("#bg").addClass('banner5');
+    })
+        
+        /*返回顶端*/
+    $(document).ready(function() {
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+        /*slideToggle弹出隐藏‘塞尔达、荒野之息、古墓丽影*/
+    $("#tc").click(function(){
+        $("#services").slideToggle("slow");
+    });
+        
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+
+	$("#maliao").click(function(){
+        $("#mlaguanwang").slideToggle("slow");
+    });
+       /* 空洞骑士弹出信息*/
+    $("#kdqstc").click(function(){
+    alert("空洞骑难度比较大");
+	});
+        
+        /*刺客信条弹出*/
+    $("#ckxttc").click(function(){
+    alert("刺客信条大革命！建议尝试一下");
+	});
+})
+    
+</script>
+
+
+</head>
+<body>
+    
+    
+	<!-- banner -->
+	<div class="banner" id="bg">
+		<div class="banner-dot">
+		<!-- header-top -->
+		<div class="header-top">
+			<div class="container">
+				<div class="header-left">
+					<h1><a href="index.html">RPG<span>games </span></a></h1>
+				</div>
+				<div class="header-middle">
+					<ul>
+						<li><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>13732226685</li>
+						<li><a href="mailto:yihaoba@vip.qq.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>yihaoba@qq.vip.com</a></li>
+					</ul>
+				</div>
+				<div class="header-right">
+					<div class="search">
+						<form action="#" method="post">
+							<input type="search" name="Search" value="搜索" required>
+							<input type="submit" value=" ">
+						</form>
+					</div>
+					
+				</div>
+				<div  style=" float: right; right: 5%; line-height: 60px; ">
+					<li style="list-style:none; display:inline; margin-right: 10px;"><a href="LoginRegister/register.html" style="color: #FFF;"> 注册</a></li>
+					<li style="list-style:none; display:inline; "><a href="LoginRegister/login.html" style="color: #FFF;"> 登录</a></li>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!-- //header-top -->
+            
+            
+            
+		<!--header-->
+		<div class="header">            
+			<div class="container">		
+				<nav class="navbar navbar-default">
+					
+                <!--页面缩至最小响应式内容-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span style="cursor: pointer;" class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            
+                <!--//页面缩至最小响应式内容-->
+                    
+                    
+					<!--navbar-header-->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li id="one"><a href="#" class="active">塞尔达传说:荒野之息</a></li>
+                            <li id="two"><a href="#" >古墓丽影:崛起</a></li>
+							<li id="three"><a href="#"  class="scroll">超级马里奥:奥德赛</a></li>
+							<li id="four"><a href="#" class="scroll">空洞骑士</a></li>
+							<li id="five"><a href="#" class="scroll">刺客信条:大革命</a></li>
+							
+						</ul>	
+						<div class="clearfix"> </div>	
+					</div>
+				</nav>
+			</div>
+		</div>
+		<!--//header-->
+		<!-- banner-info -->
+		<div class="banner-info">
+			<div class="container">
+				<div class="w3layouts-text">
+					<label></label><label></label><label></label><label></label><label></label><label></label><label></label>
+					<h2 class="item" style="display: block;"><a class="scroll"   href="#hyzx">塞尔达传说:荒野之息</a></h2>
+                    <h2 class="item"><a class="scroll" href="#gmly">古墓丽影:崛起</a></h2>
+                    <h2 class="item"><a class="scroll" href="#cjmla">超级马里奥:奥德赛</a></h2>
+                    <h2 class="item"><a class="scroll" href="#kdqs">空洞骑士</a></h2>
+                    <h2 class="item"><a class="scroll" href="#ckxt">刺客信条:大革命</a></h2>
+                    <label></label><label></label><label></label><label></label><label></label><label></label><label></label>
+				</div>
+				
+			</div>
+		</div>
+		<!-- //banner-info -->
+		</div>
+	</div>
+    
+    <!-- //banner -->
+    
+    <!-- 塞尔达传说:荒野之息 -->
+	<div class="welcome" id="hyzx">
+		<div class="container">
+			<div class="col-md-6 agileits_welcome_grid_left">
+				<h3>塞尔达传说:荒野之息</h3>
+				<p style="font-size: 1.2em;text-indent: 2em;">是由任天堂企划制作本部与子公司Monolith Soft协力研发制作的一款开放世界动作冒险游戏，游戏故事发生在海拉鲁王国灭亡的100年后，曾经一场大灾难袭击了海拉鲁王国使之灭亡，主角林克在地下遗迹苏醒，追寻着不可思议的声音，开始了新的冒险之旅 <i style="font-weight: bold;margin-left: -2em;cursor: pointer; color: red;" id="tc" >了解更多</i></p>
+			</div>
+			<div class="col-md-6 agileits_welcome_grid_right" >
+				<img src="images/huangye.jpg" alt=" " class="img-responsive" />
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+    
+    
+	<!-- //塞尔达传说:荒野之息-->
+    
+    <!-- services -->
+	<div class="services" id="services" style="display: none;">
+		<div class="container">
+			<h3>荒野之息人物介绍</h3>
+			<div class="agileinfo-services-grids">
+				<div class="col-md-6 services-grid">
+					<div class="services-grid1">
+						<div class="col-md-4 services-grid-right agile-services-grid-right">
+							<div class="services-grid-right-grid hvr-radial-out">
+								<span aria-hidden="true"></span>
+                                <div><img src="images/k1.png"></div>
+							</div>
+						</div>
+						<div class="col-md-8 services-grid-left agile-services-grid-left">
+							<h4>林克（Link）</h4>
+							<p>年轻的勇士醒来时所有记忆都已消失不见，在一个神秘声音的指引下，他开始了在“海拉鲁”广阔大陆的新旅程。</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="services-grid1">
+						<div class="col-md-4 services-grid-right agile-services-grid-right">
+							<div class="services-grid-right-grid hvr-radial-out">
+								<span  aria-hidden="true"></span>
+                                <div><img src="images/k2.png"></div>
+							</div>
+						</div>
+						<div class="col-md-8 services-grid-left agile-services-grid-left">
+							<h4>塞尔达（Zelda）</h4>
+							<p>她是“海拉鲁”王国的公主，聪明伶俐充满了好奇心，但也有深度复杂的一面。她正在对散布在世界各地的古遗址进行独立研究。</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="services-grid1">
+						<div class="col-md-4 services-grid-right agile-services-grid-right">
+							<div class="services-grid-right-grid hvr-radial-out">
+								<span  aria-hidden="true"></span>
+                                <div><img src="images/k3.png"></div>
+							</div>
+						</div>
+						<div class="col-md-8 services-grid-left agile-services-grid-left">
+							<h4>达鲁凯尔（Daruk）</h4>
+							<p>居住在“海拉鲁”的“哥隆人”（Goron），也是哥隆族的头领战士。他性格冷静而勇敢，一旦踏上战场，就会发出战嚎威慑敌人并将其打败。</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="col-md-6 services-grid">
+					<div class="services-grid1">
+						<div class="col-md-4 services-grid-right">
+							<div class="services-grid-right-grid hvr-radial-out">
+								<span aria-hidden="true"></span>
+                                <div><img src="images/k4.png"></div>
+							</div>
+						</div>
+						<div class="col-md-8 services-grid-left services-grid-left1">
+							<h4>米法(Mipha)</h4>
+							<p>居住在“海拉鲁”的“佐拉人”（Zora）。她性格内向而安静，拥有其他族人所没有的特殊力量。</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="services-grid1">
+						<div class="col-md-4 services-grid-right">
+							<div class="services-grid-right-grid hvr-radial-out">
+								<span  aria-hidden="true"></span>
+                                <div><img src="images/k5.png"></div>
+							</div>
+						</div>
+						<div class="col-md-8 services-grid-left services-grid-left1">
+							<h4>利巴尔（Revali)</h4>
+							<p>居住在“海拉鲁”的“利特人”（Rito）。他穿着与达鲁凯尔和米法一样的蓝色披风。是利特族最强射手，风之神兽梅德的操作者</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="services-grid1">
+						<div class="col-md-4 services-grid-right">
+							<div class="services-grid-right-grid hvr-radial-out">
+								<span aria-hidden="true"></span>
+                                <div><img src="images/k6.png"></div>
+							</div>
+						</div>
+						<div class="col-md-8 services-grid-left services-grid-left1">
+							<h4>博哥布林(Bokoblin)</h4>
+							<p>居住在“海拉鲁”的一种怪兽，结伴群居在巢穴中。可爱的是，他们不喜欢蜜蜂，不过一旦发现你在移动，就会发起攻击。</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //services -->
+    
+    
+	<!-- 古墓丽影:崛起 -->
+	<div class="welcome" id="gmly">
+		<div class="container">
+			<div class="col-md-6 agileits_welcome_grid_left">
+				<h3>古墓丽影:崛起</h3>
+				<p style="font-size: 1.2em;text-indent: 2em;">女主角劳拉·克劳馥(Lara Croft)去探索她以前不相信的超自然现象和未知的世界，寻找永生的秘密。从日本龙三角的邪马台逃生后，劳拉却仍未从那次冒险的阴影里解脱出来，为了证明她在那里看到的一切并非虚无，劳拉决定跟随父亲的研究，在叙利亚寻找先知雅各的墓穴，之后前往西伯利亚，搜寻那里的神秘古城：Kitezh。 <i id="flip" style="font-weight: bold; color: red; cursor: pointer;margin-left: -2em;">了解更多</i></p>
+			</div>
+			<div class="col-md-6 agileits_welcome_grid_right">
+				<img src="images/1.jpg" alt=" " class="img-responsive" />
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //古墓丽影:崛起 -->
+    
+    <!--古墓丽影九宫格开始-->
+    <div style="margin-left:15%; width:80%; display: none;" id="panel">
+        <div>
+        <img style="width: 30%;" src="images/l1.jpg">
+        <img style="width: 30%;" src="images/l2.jpg">
+        <img style="width: 30%;" src="images/l3.jpg"></div>  
+
+        <div style="margin-top:5px;">
+        <img style="width: 30%;" src="images/l4.jpg">
+        <img style="width: 30%;" src="images/l5.jpg">
+        <img style="width: 30%;" src="images/l6.jpg"></div>  
+
+        <div style="margin-top:5px;">
+        <img style="width: 30%;" src="images/l7.jpg">
+        <img style="width: 30%;" src="images/l8.jpg">
+        <img style="width: 30%;" src="images/l9.jpg"></div> 
+        
+    </div>
+    <!--古墓丽影九宫格结束-->
+    
+    <!-- 超级马里奥:奥德赛 -->
+	<div class="welcome" id="cjmla">
+		<div class="container">
+			
+            <div class="col-md-6 agileits_welcome_grid_left">
+				<h3> <a href="https://www.nintendo.com.hk/switch/super_mario_odyssey/" target="_blank"></a>超级马里奥:奥德赛</a></h3>
+				<p style="font-size: 1.2em;text-indent: 2em;">任天堂在E3大会上公布了新作《超级马里奥：奥德赛》（以下简称《奥德赛》）的游戏片段。这款经典游戏首次采用了开放式地图，在游戏中，马里奥不但可以在玩家的操作下自由行走，还能化身小鱼、炮弹等新的角色。
+                《奥德赛》中，马里奥的帽子被赋予了新的功能——可以用它收集硬币，跑出去攻击敌人，或者当你把帽子扔在面前的时候，它就会变成一个穿越到新的区域的平台。视频显示马里奥的帽子可以戴到游戏中的任何一个物件上，之后马里奥就可以附身到任何东西上。也就是说你可以用游戏里的任意东西来攻关
+				 <i id="maliao" style="font-weight: bold;margin-left: -2em; cursor: pointer; font-weight: bold; color: red">了解更多</i></p>
+			</div>
+            
+			<div class="col-md-6 agileits_welcome_grid_right">
+				<img style="margin-top: 15%;" src="images/ma.jpg" alt=" " class="img-responsive" />
+			</div>
+            
+			
+            
+			<div class="clearfix"> </div>
+			
+			<div style="display: none;" id="mlaguanwang">
+				<center><iframe src="https://www.nintendo.com.hk/switch/super_mario_odyssey/" frameborder="0" style="width: 100%; height: 400px; "></iframe></center>
+			</div>
+			
+		</div>
+		
+	</div>
+	<!-- 超级马里奥:奥德赛 -->
+	
+    <!-- gallery -->
+    <div id="gallery" class="gallery" style="margin-top: -8em;">
+			<div class="container">
+				<h3>图片欣赏</h3>   
+				<div id="jzBox" class="jzBox">
+					<div id="jzBoxNextBig"></div>
+					<div id="jzBoxPrevBig"></div>
+					<img src="#" id="jzBoxTargetImg" alt="">
+					<div id="jzBoxBottom">
+						<div id="jzBoxTitle"></div>
+						<div id="jzBoxCounter"></div>
+						<span id="jzBoxMoreItems"> 
+							<i class="glyphicon glyphicon-menu-left" id="jzBoxPrev"></i> &nbsp;
+							<i class="glyphicon glyphicon-menu-right" id="jzBoxNext"></i> &nbsp;
+						</span>
+						<i class="glyphicon glyphicon-remove-circle" id="jzBoxClose"></i>
+					</div>
+				</div>
+				<div class="w3ls-gallery-grids">
+					<div class="col-md-4 gallery-grid">
+						<div class="wpf-demo-4">  
+							<a href="images/g1.jpg" class="jzBoxLink item-hover" title="我能控制导弹嗷">  
+								<img src="images/g1.jpg" class="img-responsive" alt=" " />
+								<div class="view-caption">
+									<p>导弹（单击查看）</p>
+								</div> 
+							</a>    		
+						</div>
+						<div class="wpf-demo-4">  
+							<a href="images/g2.jpg" class="jzBoxLink item-hover" title="鱼也不是什么问题">  
+								<img src="images/g2.jpg" alt=" " class="img-responsive" />
+								<div class="view-caption">
+									<p>鱼</p>
+								</div> 
+							</a>    			
+						</div>
+						<div class="wpf-demo-4">  
+							<a href="images/g7.jpg" class="jzBoxLink item-hover" title="给你们康康我的帽子">  
+								<img src="images/g7.jpg" alt=" " class="img-responsive" />
+								<div class="view-caption">
+									<p>“凯皮”</p>
+								</div> 
+							</a>    			
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-4 gallery-grid">
+						<div class="wpf-demo-4">  
+							<a href="images/g3.jpg" class="jzBoxLink item-hover" title="龙都可以控制的奥">  
+								<img src="images/g3.jpg" alt=" " class="img-responsive" />
+								<div class="view-caption">
+									<p>点就点啊</p>
+								</div> 
+							</a>    			
+						</div>
+						<div class="wpf-demo-4">  
+							<a href="images/g4.jpg" class="jzBoxLink item-hover" title="石头而已啦">  
+								<img src="images/g4.jpg" alt=" " class="img-responsive" />
+								<div class="view-caption">
+									<p>憨憨样</p>
+								</div> 
+							</a>    			
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-4 gallery-grid">
+						<div class="wpf-demo-4">  
+							<a href="images/g6.jpg" class="jzBoxLink item-hover" title="这些不都是小case">  
+								<img src="images/g6.jpg" alt=" " class="img-responsive" />
+								<div class="view-caption">
+									<p>可以拿去当桌面</p>
+								</div> 
+							</a>  
+						</div> 
+						<div class="wpf-demo-4">  
+							<a href="images/g8.jpg" class="jzBoxLink item-hover" title="">  
+								<img src="images/g8.jpg" alt=" " class="img-responsive" />
+								<div class="view-caption">
+									<p>主题图送给大家</p>
+								</div> 
+							</a>    			
+						</div>
+						<div class="wpf-demo-4">  
+							<a href="images/g5.jpg" class="jzBoxLink item-hover" title="能控制这么多东西都是因为这玩意儿，它是帽子国国民“凯比">  
+								<img src="images/g5.jpg" alt=" " class="img-responsive" />
+								<div class="view-caption">
+									<p>就这样了</p>
+								</div> 
+							</a>    			
+						</div> 
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<script src="js/jzBox.js"></script>
+			</div>
+	</div>
+	<!-- //gallery --> 
+    
+    
+    <!-- 空洞骑士 -->
+	<div class="welcome" id="kdqs">
+		<div class="container">
+			<div class="col-md-6 agileits_welcome_grid_left">
+				<h3>空洞骑士</h3>
+				<p style="font-size: 1.2em;text-indent: 2em;">一款动画风格的银河恶魔城类型动作游戏，庞大的游戏世界交错相通。游戏的世界因为生动、丰富的细节而生机勃勃：地下洞穴中充满了奇异又可怕的生物，每一种都是通过传统的 2D 手绘动画打造。 </p>
+			</div>
+			<div class="col-md-6 agileits_welcome_grid_right" id="kdqstc">
+				<img src="images/666.jpg" alt=" " class="img-responsive" />
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //空洞骑士 -->
+    
+    <!-- 刺客信条:大革命 -->
+	<div class="welcome" id="ckxt">
+		<div class="container">
+			
+			<div class="col-md-6 agileits_welcome_grid_right" id="ckxttc">
+				<img src="images/cike.jpg" alt=" " class="img-responsive" />
+			</div>
+            
+            <div class="col-md-6 agileits_welcome_grid_left">
+				<h3 style="float: right;">刺客信条:大革命</h3>
+				<p style="font-size: 1.2em; float: right;text-indent: 2em;">育碧公司研发的一款动作冒险类游戏。游戏的背景设定在1789年的巴黎，法国大革命时期。经济的萧条使人民的生活苦不堪言，饥饿、贫穷、骚乱充斥着城市每一个角落，贵族们却还在逍遥自在的生活。玩家将扮演全新刺客主角亚诺·多里安，拥有法兰西与奥地利血统的他在失去一切后，于1789年加入了刺客组织，试图找出这场革命幕后的真正势力。 </p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //刺客信条:大革命 -->
+    
+    <!-- contact -->
+		<div class="contact" id="contact" style="background-color: #f7f7f7;">
+			<div class="container">
+				<h3 style="margin-top: -1em;">联系方式</h3>   
+				<div class="contact-grids" style="overflow: hidden;">
+					<div class="col-md-6 agileits_welcome_grid_right">
+						<img src="images/contact.png"  style="float: left;margin-top: -3em;margin-right:4em; width: 100%;" >
+					</div>
+                    
+                    <div class="col-md-6 w3l-contact-form" >
+						<form action="#" method="post" style="margin-top: -3em;">
+							<input type="text" name="Name" placeholder="姓名" required="">
+							<input type="text" name="Email" placeholder="邮箱" required="">
+							<textarea placeholder="信息" name="Message" required=""></textarea>
+                            
+							<input type="submit" value="提交">
+						</form>
+					</div>
+					<div class="clearfix"> </div>	
+				</div>
+				 
+			</div>
+		</div>
+		<!-- //contact -->
+    
+    
+    <!-- footer -->
+    
+	<div class="agileits-w3layouts-footer">
+		<div class="container">
+			<div class="agile-copyright">
+				<p>202031980227©洪逸豪游戏推荐网页</p>
+			</div>
+		</div>
+	</div>
+    
+	<!-- //footer -->
+
+    <!--回到顶部-->
+    <a href="#" id="toTop" style="display: block;"><span id="toTopHover"></span>To Top</a>
+    <!--//回到顶部-->
+   
+    
+</body>
+</html>
